@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operators and Numeric Data Types in Python</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        p, code {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>String Operators in Python</h1>
+<p>
+    Strings in Python support various operators for common operations like concatenation, repetition, and comparison. Here are some key string operators:
+</p>
+<ol>
+    <li><strong>Concatenation (<code>+</code>):</strong> The <code>+</code> operator is used to concatenate (combine) two strings.
+        <pre><code>str1 = "Hello"
+str2 = " World"
+result = str1 + str2  # Result: "Hello World"
+</code></pre>
+    </li>
+    <li><strong>Repetition (<code>*</code>):</strong> The <code>*</code> operator is used for string repetition.
+        <pre><code>original = "Python"
+repeated = original * 3  # Result: "PythonPythonPython"
+</code></pre>
+    </li>
+    <li><strong>Membership (<code>in</code> and <code>not in</code>):</strong> The <code>in</code> and <code>not in</code> operators are used to check if a substring is present or not in a given string.
+        <pre><code>text = "Python is powerful"
+check1 = "Python" in text  # True
+check2 = "Java" not in text  # True
+</code></pre>
+    </li>
+    <li><strong>Comparison (<code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>):</strong> Strings can be compared lexicographically.
+        <pre><code>str1 = "apple"
+str2 = "banana"
+result = str1 &lt; str2  # True (compared based on lexicographical order)
+</code></pre>
+    </li>
+    <li><strong>Indexing (<code>[]</code>):</strong> Strings support indexing to access individual characters.
+        <pre><code>text = "Python"
+first_char = text[0]  # Result: "P"
+</code></pre>
+    </li>
+    <li><strong>Slicing (<code>[:]</code>):</strong> Slicing is used to extract a portion of a string.
+        <pre><code>text = "Python"
+sliced_text = text[1:4]  # Result: "yth"
+</code></pre>
+    </li>
+    <li><strong>String Formatting (<code>%</code> and <code>str.format()</code>):</strong> Old-style string formatting using <code>%</code> and newer-style using <code>str.format()</code> are used to insert values into a string.
+        <pre><code>name = "Alice"
+age = 30
+message = "Hello, my name is %s and I am %d years old." % (name, age)
+</code></pre>
+        <p>Using <code>str.format()</code>:</p>
+        <pre><code>message = "Hello, my name is {} and I am {} years old.".format(name, age)
+</code></pre>
+    </li>
+    <li><strong>String Methods:</strong> Various string methods like <code>upper()</code>, <code>lower()</code>, <code>strip()</code>, <code>replace()</code>, etc., are used for string manipulation.
+        <pre><code>text = " Python is fun "
+uppercase_text = text.upper()  # Result: " PYTHON IS FUN "
+stripped_text = text.strip()   # Result: "Python is fun"
+</code></pre>
+    </li>
+</ol>
+
+<h2>Numeric Data Types in Python</h2>
+<p>
+    Python supports several numeric data types for working with numerical values. Here are the main numeric data types:
+</p>
+<ol>
+    <li><strong>Integers (<code>int</code>):</strong> Integers represent whole numbers, positive or negative, without any decimal points.
+        <pre><code>x = 5
+y = -10
+</code></pre>
+    </li>
+    <li><strong>Floating-Point Numbers (<code>float</code>):</strong> Floating-point numbers represent real numbers and include a decimal point.
+        <pre><code>pi = 3.14
+height = 5.9
+</code></pre>
+    </li>
+    <li><strong>Complex Numbers (<code>complex</code>):</strong> Complex numbers consist of a real and an imaginary part.
+        <pre><code>z = 3 + 2j
+</code></pre>
+    </li>
+    <li><strong>Numeric Operations:</strong> Python supports various numeric operations, including addition (<code>+</code>), subtraction (<code>-</code>), multiplication (<code>*</code>), division (<code>/</code>), exponentiation (<code>**</code>), and modulo (<code>%</code>).
+        <pre><code>result = 10 + 5    # Addition
+result = 15 - 3    # Subtraction
+result = 2 * 4     # Multiplication
+result = 8 / 2     # Division
+result = 3 ** 2    # Exponentiation
+result = 10 % 3    # Modulo (remainder after division)
+</code></pre>
+    </li>
+    <li><strong>Numeric Type Conversion:</strong> You can convert between numeric types using functions like <code>int()</code>, <code>float()</code>, and <code>complex()</code>.
+        <pre><code>x = 10
+y = float(x)      # Convert to float
+z = complex(x)    # Convert to complex
+</code></pre>
+    </li>
+</ol>
+
+<p>
+    Understanding these string operators and numeric data types is essential for effective programming in Python, whether you are working with text or numerical values.
+</p>
+
+</body>
+</html>

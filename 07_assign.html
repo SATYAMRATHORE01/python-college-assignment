@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Print and Conversion Functions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Python Print and Conversion Functions</h1>
+    </header>
+
+    <section>
+        <h2>Printing Function (<code>print()</code>)</h2>
+
+        <p>The <code>print()</code> function in Python is a fundamental tool for displaying information in the console or terminal. It is versatile and allows for various formatting options. Key aspects of the <code>print()</code> function include:</p>
+
+        <ul>
+            <li><strong>Basic Usage:</strong> The simplest usage involves passing a string or variable to <code>print()</code>.</li>
+            
+            ```python
+            print("Hello, World!")
+            ```
+
+            <li><strong>Multiple Arguments:</strong> Multiple items can be printed by separating them with commas.</li>
+
+            ```python
+            name = "Alice"
+            age = 30
+            print("Name:", name, "Age:", age)
+            ```
+
+            <li><strong>Formatted Output:</strong> You can format the output using f-strings or the <code>format()</code> method.</li>
+
+            ```python
+            name = "Bob"
+            age = 25
+            print(f"Hello, {name}! You are {age} years old.")
+            ```
+
+            <li><strong>End and Sep Parameters:</strong> The <code>end</code> parameter specifies what to print at the end (default is newline <code>\n</code>), and <code>sep</code> specifies the separator between arguments (default is space <code>' '</code>).</li>
+
+            ```python
+            print("This", "is", "a", "sentence", end="!!\n", sep="-")
+            ```
+
+            <li><strong>File Parameter:</strong> You can redirect the output to a file by specifying the <code>file</code> parameter.</li>
+
+            ```python
+            with open("output.txt", "w") as file:
+                print("Hello, file!", file=file)
+            ```
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conversion Functions</h2>
+
+        <p>Conversion functions in Python are used to change the data type of a value or variable. Here are some common conversion functions:</p>
+
+        <ul>
+            <li><strong><code>str()</code>:</strong> Converts a value to a string.</li>
+
+            ```python
+            x = 42
+            str_x = str(x)  # Result: '42'
+            ```
+
+            <li><strong><code>int()</code>:</strong> Converts a value to an integer.</li>
+
+            ```python
+            y = "10"
+            int_y = int(y)  # Result: 10
+            ```
+
+            <li><strong><code>float()</code>:</strong> Converts a value to a floating-point number.</li>
+
+            ```python
+            z = "3.14"
+            float_z = float(z)  # Result: 3.14
+            ```
+
+            <li><strong><code>bool()</code>:</strong> Converts a value to a boolean.</li>
+
+            ```python
+            truthy_value = 42
+            bool_truthy = bool(truthy_value)  # Result: True
+            ```
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Interactive Example</h2>
+
+        <p>Click the button below to see the print function in action:</p>
+
+        <button onclick="printMessage()">Click Me</button>
+
+        <script>
+            function printMessage() {
+                // Using the print function to display a message in the browser console
+                console.log("Hello, World! This message is printed using JavaScript.");
+            }
+        </script>
+    </section>
+
+</body>
+</html>

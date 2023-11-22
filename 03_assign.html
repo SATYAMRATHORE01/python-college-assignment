@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation in Python and Reserved Words</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        p, code {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Documentation in Python</h1>
+<p>
+    Documentation in Python refers to the comprehensive and organized information about the Python programming language and its libraries. Proper documentation is crucial for understanding how to use Python features, functions, and modules. Here are key aspects of Python documentation:
+</p>
+<ol>
+    <li><strong>Official Documentation (docs.python.org):</strong> The Python Software Foundation maintains the official Python documentation, which is hosted at <a href="https://docs.python.org/" target="_blank">docs.python.org</a>. This documentation provides details about the Python language, standard libraries, and various modules.</li>
+    <li><strong>Docstrings:</strong> Docstrings are strings included in the source code to document functions, classes, modules, or methods. They provide information about the purpose, usage, and parameters of the code they document. Docstrings can be accessed programmatically, making them a valuable part of self-documenting code.
+        <pre><code>def example_function(param):
+    \"""
+    This is a docstring.
+    It provides information about the function.
+    
+    :param param: Description of the parameter.
+    :return: Description of the return value.
+    \"""
+    # Function implementation
+</code></pre>
+    </li>
+    <li><strong>Help Function:</strong> The <code>help()</code> function in the Python interpreter is a quick way to access documentation interactively. For example, <code>help(list)</code> provides information about the list data type.</li>
+    <li><strong>Comments:</strong> Comments in the code are not documentation per se, but they contribute to understanding. While docstrings provide formal documentation, comments explain specific lines or sections of code.</li>
+    <li><strong>Third-Party Documentation:</strong> Many Python libraries and frameworks have their own documentation. For example, popular libraries like NumPy, Pandas, and Django have extensive documentation to guide users.</li>
+    <li><strong>Online Resources and Tutorials:</strong> Numerous online resources, tutorials, and community-contributed documentation exist. Websites like Stack Overflow, Real Python, and others provide additional learning materials.</li>
+</ol>
+
+<h2>Python Reserved Words</h2>
+<p>
+    Python reserved words, also known as keywords, are specific words that have special meanings in the Python language. These words are reserved for specific purposes and cannot be used as identifiers (names for variables, functions, etc.). Here are some of the Python reserved words:
+</p>
+<pre><code>and       as        assert    break     class
+continue  def       del       elif      else
+except    False     finally   for       from
+global    if        import    in        is
+lambda    None      nonlocal  not       or
+pass      raise     return    True      try
+while     with      yield
+</code></pre>
+<p>
+    <strong>Examples of Reserved Words:</strong>
+</p>
+<ul>
+    <li><code>if</code>, <code>else</code>, <code>while</code>: Used for conditional statements and loops.</li>
+    <li><code>def</code>, <code>class</code>: Used to define functions and classes.</li>
+    <li><code>import</code>, <code>from</code>: Used for importing modules.</li>
+    <li><code>try</code>, <code>except</code>, <code>finally</code>: Used for exception handling.</li>
+    <li><code>True</code>, <code>False</code>, <code>None</code>: Represent Boolean values and the absence of a value.</li>
+</ul>
+<p>
+    <strong>Note:</strong> Attempting to use a reserved word as a variable or identifier will result in a syntax error. Understanding these reserved words is essential for writing correct and readable Python code. They form the building blocks of the language's syntax and structure.
+</p>
+
+</body>
+</html>
